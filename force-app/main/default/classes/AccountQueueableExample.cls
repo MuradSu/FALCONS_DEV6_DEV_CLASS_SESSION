@@ -4,7 +4,7 @@ public with sharing class AccountQueueableExample implements Queueable{
     public AccountQueueableExample(list<account> accList){
         listAccount = accList;
     }
-// Exapmple 1
+// Example 1
     public void execute(QueueableContext qc){
         for (account a : listAccount) {
             a.Name = a.Name + ' -- SI';
